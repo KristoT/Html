@@ -23,13 +23,13 @@ li a {
   display: block;
   align-items: left;
   justify-content: left;
-  margin: 10%;
+  margin: 7%;
 }
 .box {
   padding: 0;
   margin: 0;
   background: 8, 102, 28, 0.685;
-  width: 25%;
+  width: 20%;
   border: 1px solid #d6d6d6;
   box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
   border-radius: 3px;

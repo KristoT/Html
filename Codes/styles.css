@@ -2,104 +2,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(185, 177, 99);
 }
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: inline;
-  position: initial;
-  min-height: 100%;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 16px;
+li,
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
   text-decoration: none;
-  border: 2px solid black;
-  background-color: rgba(8, 102, 28, 0.801);
+  animation: move 2s 1;
 }
-.box-wrap {
-  display: block;
-  align-items: left;
-  justify-content: left;
-  margin: 7%;
-}
-.box {
-  padding: 0;
-  margin: 0;
-  background: 8, 102, 28, 0.685;
-  width: 20%;
-  border: 1px solid #d6d6d6;
-  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-  transition: 0.2s all;
-}
-.box-wrap:hover .box {
-  filter: blur(3px);
-  opacity: 0.5;
-  transform: scale(0.98);
-  box-shadow: none;
-}
-.box-wrap:hover .box:hover {
-  transform: scale(1);
-  filter: blur(0px);
-  opacity: 1;
-  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
-}
-.big {
+header {
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 50%;
-  border: 2px solid black;
-}
-.table {
-  border: 2px solid green;
-  align-items: center;
-  margin-left: 25%;
-  width: 500px;
-  height: 200px;
-  background-color: rgba(16, 163, 189, 0.692);
+  padding: 30px 10%;
 }
 h1 {
-  text-align: center;
+  cursor: pointer;
 }
-.style {
-  text-align: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+h1:hover {
+  text-shadow: 1px 2px 3px #666;
 }
-#head {
-  background-color: rgb(250, 250, 247);
+.box-wrap {
+  list-style: none;
 }
-td {
-  border: 2px solid black;
+.box-wrap li {
+  display: inline-block;
+  padding: 0px 20px;
 }
-tr {
-  border: 2px solid black;
+.box-wrap {
+  transition: all 0.5 ease 0s;
 }
-#animation {
-  animation: move 2s 2;
-  animation-iteration-count: 1;
+.box-wrap li a:hover {
+  text-shadow: 1px 2px 3px #666;
+}
+p {
+  padding: 9px 25px;
+  background-color: rgb(69, 75, 62);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5 ease 0s;
+}
+p:hover {
+  background-color: cornflowerblue;
+}
+img {
+  opacity: 1;
+  padding-top: 20px;
+  width: 100%;
+  object-fit: fill;
 }
 @keyframes move {
-  0% {
-    opacity: 0;
-  }
-  25% {
+  50% {
     transform: translateY(100px);
-    opacity: 0.25;
+    opacity: 0.2;
   }
   100% {
     transform: translateY(0px);
     opacity: 1;
   }
-  50% {
-    transform: translateY(-50px);
-    opacity: 1;
+  25% {
+    transform: translateY(-25px);
+    opacity: 0.5;
   }
 }

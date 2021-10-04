@@ -3,7 +3,7 @@ table {
   border-radius: 15px;
   width: 50vh;
   height: 25vw;
-  margin-top: 0;
+  margin-top: 5px;
 }
 #head {
   background-color: rgba(28, 139, 115, 0.788);
@@ -29,4 +29,15 @@ aside {
 }
 img {
   width: 300px;
+}
+a {
+  text-decoration: none;
+}
+td a {
+  font-size: 20px;
+  color: black;
+  transition: ease 1s 0;
+}
+td a:hover {
+  color: rgb(187, 187, 196);
 }

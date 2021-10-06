@@ -37,7 +37,7 @@ h1:hover {
 .box-wrap li a:hover {
   text-shadow: 1px 2px 3px #666;
 }
-p {
+.style {
   padding: 9px 25px;
   background-color: rgb(69, 75, 62);
   border: none;
@@ -50,9 +50,10 @@ p:hover {
 }
 img {
   opacity: 1;
-  padding-top: 20px;
+  /* padding-top: 10px; */
   width: 70vh;
   object-fit: fill;
+  border: 2px solid black;
 }
 @keyframes move {
   50% {
@@ -70,4 +71,23 @@ img {
 }
 .surf {
   width: 15vh;
+}
+.aside {
+  width: 60%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #990411;
+  font-style: italic;
+  color: #000000;
+}
+.aside > p {
+  margin: 0.5rem;
+}
+.big {
+}
+
+.text {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
